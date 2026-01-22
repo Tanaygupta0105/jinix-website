@@ -1,0 +1,6 @@
+[build]
+  base = "."
+  publish = "."
+  command = "# no build command"
+
+
