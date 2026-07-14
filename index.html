@@ -2,329 +2,642 @@
 <html lang="en">
 
 <head>
-    <!-- Basic Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="language" content="English">
-    <meta name="author" content="JINIX Solutions">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 
-    <!-- Primary SEO Meta Tags -->
-    <title>JINIX Solutions | Quote-to-Cash Automation for SaaS Platforms</title>
-    <meta name="title" content="JINIX Solutions | Quote-to-Cash Automation for SaaS Platforms">
+    <title>JINIX Solutions | Quote-to-Cash & Financial Crime Consulting</title>
     <meta name="description"
-        content="JINIX Solutions engineers frictionless Quote-to-Cash (Q2R) ecosystems for SaaS businesses. Automate subscription management, CPQ, billing, and revenue recognition. Trusted by high-growth revenue teams.">
-    <meta name="keywords"
-        content="Quote to Cash, Q2R, SaaS billing, subscription management, CPQ, revenue recognition, Salesforce, Zuora, BillingPlatform, RevOps, ASC 606 compliance">
+        content="JINIX Solutions engineers the systems enterprises cannot afford to get wrong: Quote-to-Cash — CPQ, subscription billing and ASC 606 revenue recognition — and Financial Crime Compliance. Independent consultancy across Salesforce, Zuora, BillingPlatform, Conga and NetSuite.">
     <link rel="canonical" href="https://jinix.co.in/">
 
-    <!-- Open Graph / Facebook Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jinix.co.in/">
-    <meta property="og:title" content="JINIX Solutions | Quote-to-Cash Automation for SaaS Platforms">
+    <meta property="og:title" content="JINIX Solutions | Quote-to-Cash & Financial Crime Consulting">
     <meta property="og:description"
-        content="Automate your revenue engine with seamless Quote-to-Cash orchestration. Eliminate silos, stop revenue leakage, and scale your SaaS business.">
-    <meta property="og:image" content="https://jinix.co.in/assets/new_logo_hq.png">
+        content="We engineer the systems that carry a business from lead to recognised revenue — and the controls that keep financial crime out of them.">
+    <meta property="og:image" content="https://jinix.co.in/assets/og.png">
     <meta property="og:site_name" content="JINIX Solutions">
-    <meta property="og:locale" content="en_US">
-
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://jinix.co.in/">
-    <meta name="twitter:title" content="JINIX Solutions | Quote-to-Cash Automation for SaaS Platforms">
+    <meta name="twitter:title" content="JINIX Solutions | Quote-to-Cash & Financial Crime Consulting">
     <meta name="twitter:description"
-        content="Automate your revenue engine with seamless Quote-to-Cash orchestration. Scale your SaaS business with professional subscription management.">
-    <meta name="twitter:image" content="https://jinix.co.in/assets/new_logo_hq.png">
+        content="We engineer the systems that carry a business from lead to recognised revenue — and the controls that keep financial crime out of them.">
+    <meta name="twitter:image" content="https://jinix.co.in/assets/og.png">
 
-    <!-- Structured Data / Schema.org for Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "ProfessionalService",
       "name": "JINIX Solutions",
       "url": "https://jinix.co.in",
-      "logo": "https://jinix.co.in/assets/new_logo_hq.png",
-      "description": "Professional Quote-to-Cash automation and revenue operations solutions for SaaS businesses",
-      "email": "Solutions@jinix.co.in",
-      "sameAs": [
-        "https://www.linkedin.com/company/jinix-solutions"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "IN"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "Solutions@jinix.co.in",
-        "contactType": "Sales"
-      },
-      "knowsAbout": [
-        "Salesforce",
-        "Zuora",
-        "BillingPlatform",
-        "Conga",
-        "NetSuite",
-        "Quote-to-Cash",
-        "Revenue Operations",
-        "Subscription Management"
-      ]
+      "logo": "https://jinix.co.in/assets/logo.svg",
+      "description": "Independent consultancy for Quote-to-Cash / revenue operations and Financial Crime Compliance.",
+      "email": "solutions@jinix.co.in",
+      "sameAs": ["https://www.linkedin.com/company/jinix-solutions"],
+      "address": { "@type": "PostalAddress", "addressCountry": "IN" },
+      "knowsAbout": ["Quote-to-Cash", "CPQ", "Subscription Billing", "Revenue Recognition", "ASC 606",
+        "Revenue Operations", "Anti-Money Laundering", "Sanctions Screening", "Transaction Monitoring",
+        "Salesforce", "Zuora", "BillingPlatform", "Conga", "NetSuite"]
     }
     </script>
 
-    <!-- Favicon and Resources -->
-    <link rel="icon" href="assets/new_logo_hq.png" type="image/png">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="assets/new_logo_hq.png">
 
-    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="preload" as="image" href="assets/hero-bg.jpg">
-
-    <!-- Stylesheets -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <nav class="glass-nav">
-        <img src="assets/new_logo_hq.png" alt="JINIX Solutions" class="logo-img" width="180" height="48">
-        <div class="menu-toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="brand" aria-label="JINIX Solutions — home">
+                <img src="assets/logo.svg" alt="" class="brand__mark" width="24" height="24">
+                <span class="brand__word">Jinix</span>
+            </a>
+            <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks"
+                aria-label="Menu"><span></span></button>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="quote-to-cash.html" class="nav__link">Quote-to-Cash</a></li>
+                <li><a href="financial-crime.html" class="nav__link">Financial Crime</a></li>
+                <li><a href="platforms.html" class="nav__link">Platforms</a></li>
+                <li><a href="work.html" class="nav__link">Work</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <span class="nav__year" aria-hidden="true">MMXXVI</span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#platforms">Platforms</a></li>
-            <li><a href="#resources">Resources</a></li>
-            <li><a href="#contact" class="btn-sm">Get Started</a></li>
-        </ul>
     </nav>
 
-    <header class="hero">
-        <div class="hero-bg"></div>
-        <div class="container hero-content">
-            <div class="glass-card hero-card fade-in">
-                <p class="overline">JINIX Solutions</p>
-                <h1>Master the <span class="highlight">Lead-to-Revenue</span> Lifecycle.</h1>
-                <p class="subheadline">Scale your SaaS business with automated subscription management and seamless
-                    Quote-to-Revenue (Q2R) orchestration. Eliminate silos, stop revenue leakage, and focus on growth.
-                </p>
-                <div class="cta-group">
-                    <a href="#contact" class="btn-primary">Book a Q2R Strategy Session</a>
-                    <a href="#solutions" class="btn-secondary">Explore Our Solutions</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <main id="main">
 
-    <section class="section-clients">
-        <div class="container">
-            <p class="clients-lead">Trusted by high-growth revenue teams</p>
-            <div class="clients-grid fade-in delay-1">
-                <div class="client-logo">Salesforce</div>
-                <div class="client-logo">Zuora</div>
-                <div class="client-logo">NetSuite</div>
-                <div class="client-logo">Stripe</div>
-            </div>
-        </div>
-    </section>
+        <!-- ================= HERO ================= -->
+        <header class="hero hero--current wrap">
+            <!-- The body of the current runs behind the type; the ink that escapes
+                 falls in front of it. Both are decorative — the argument is in the
+                 text and in the stage index, so neither canvas carries meaning a
+                 screen reader would miss. -->
+            <canvas class="hero__back" id="heroBack" aria-hidden="true"></canvas>
 
-    <section id="solutions" class="section-solutions">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>The Lead-to-Q2R Journey</h2>
-                <p>Integrated & Automated.</p>
-            </div>
-            <div class="process-timeline fade-in delay-1">
-                <div class="process-step">
-                    <div class="step-num">01</div>
-                    <h4>Lead & Opportunity</h4>
-                    <p>CRM Integration & Lead Scoring. Real-time visibility into the pipeline.</p>
+            <div class="hero__body">
+                <div class="hero__eyebrow">
+                    <span class="label">Independent &middot; Quote-to-Cash</span>
                 </div>
-                <div class="process-step">
-                    <div class="step-num">02</div>
-                    <h4>Configure & Quote</h4>
-                    <p>CPQ & Bundle Management. Error-free pricing in seconds.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">03</div>
-                    <h4>Contract & Order</h4>
-                    <p>Automated Provisioning. Instant activation upon signature.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">04</div>
-                    <h4>Billing & Invoicing</h4>
-                    <p>Subscription & Usage. Flexible cycles and multi-currency.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">05</div>
-                    <h4>Rev Recognition</h4>
-                    <p>ASC 606 Compliance. Automated deferred revenue tracking.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">06</div>
-                    <h4>Renew & Expand</h4>
-                    <p>Churn Analytics. Proactive workflows to maximize LTV.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="services" class="section-services">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Core Solutions for SaaS Platforms</h2>
-                <p>Technology to bridge CRM and ERP.</p>
-            </div>
-            <div class="grid-services fade-in delay-2">
-                <div class="service-card">
-                    <h3>Agile Subscription Management</h3>
-                    <p>Stop being limited by your billing software. Support any pricing model—flat fee, tiered,
-                        per-seat, or consumption-based—without writing a single line of code.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Frictionless CPQ</h3>
-                    <p>Empower your sales team to generate complex quotes in seconds. Our CPQ engine handles discounts,
-                        ramp deals, and multi-year contracts while ensuring 100% accuracy.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Unified Revenue Ops (RevOps)</h3>
-                    <p>Break down the walls between Sales, Finance, and Customer Success. We provide a "Single Source of
-                        Truth" for your ARR, MRR, and Net Retention metrics.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Automated Compliance</h3>
-                    <p>Stay audit-ready 365 days a year. Our platform automates Revenue Recognition (ASC 606) and
-                        provides deep insights into your SaaS unit economics.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="platforms" class="section-platforms">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Platforms</h2>
-                <p>We master the engines that power your revenue.</p>
-            </div>
-            <div class="tech-grid fade-in">
-                <div class="tech-item">Salesforce</div>
-                <div class="tech-item">Zuora</div>
-                <div class="tech-item">BillingPlatform</div>
-                <div class="tech-item">Conga</div>
-                <div class="tech-item">NetSuite</div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="advantage" class="section-advantage">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Why Leading SaaS Platforms Partner With Us</h2>
-                <p>"The shift from 'Lead' to 'Cash' is where most SaaS companies lose 5–10% of their margin."</p>
-            </div>
-            <div class="advantage-grid fade-in delay-3">
-                <div class="advantage-item glass-panel">
-                    <h3>Scalability</h3>
-                    <p>Built to handle millions of transactions without slowing down.</p>
-                </div>
-                <div class="advantage-item glass-panel">
-                    <h3>Global Readiness</h3>
-                    <p>Multi-currency, multi-entity, and global tax compliance (VAT/Sales Tax) baked in.</p>
-                </div>
-                <div class="advantage-item glass-panel">
-                    <h3>Data-Driven Insights</h3>
-                    <p>Real-time dashboards for Churn, LTV, and CAC. Single Source of Truth.</p>
-                </div>
-                <div class="advantage-item glass-panel">
-                    <h3>Seamless Ecosystem</h3>
-                    <p>Native integrations with Salesforce, HubSpot, NetSuite, and Microsoft Dynamics.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="resources" class="section-resources">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Success Stories</h2>
-                <p>Real results from high-growth enterprises.</p>
-            </div>
-            <div class="resources-grid fade-in">
-                <div class="resource-card glass-panel">
-                    <h3>Global Fintech Scales Billing</h3>
-                    <p class="metric">50k+ Users Onboarded</p>
-                    <p>Unified 5 legacy billing systems into one automated engine, reducing close time by 4 days.</p>
-                    <a href="case-study-fintech.html" class="btn-sm">Read Case Study</a>
-                </div>
-                <div class="resource-card glass-panel">
-                    <h3>Enterprise SaaS Compliance</h3>
-                    <p class="metric">100% ASC 606 Accuracy</p>
-                    <p>Automated revenue recognition for multi-year contracts, eliminating manual spreadsheets.</p>
-                    <a href="case-study-saas.html" class="btn-sm">Read Case Study</a>
-                </div>
-                <div class="resource-card glass-panel">
-                    <h3>IoT Platform Growth</h3>
-                    <p class="metric">15% Polish Churn Reduction</p>
-                    <p>Implemented proactive renewal workflows and usage-based billing triggers.</p>
-                    <a href="case-study-iot.html" class="btn-sm">Read Case Study</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section-contact">
-        <div class="container">
-            <div class="contact-wrapper glass-panel fade-in">
-                <h2>Ready to Automate Your Revenue Engine?</h2>
-                <p>Join the high-growth SaaS companies that have eliminated manual billing.</p>
-                <p style="margin-bottom: 2rem; opacity: 0.8;">Or email us at: <a href="mailto:Solutions@jinix.co.in"
-                        style="color: var(--color-action); text-decoration: none;">Solutions@jinix.co.in</a></p>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="contactName" class="sr-only">Name</label>
-                        <input type="text" id="contactName" name="name" placeholder="Name" required
-                            aria-label="Your name">
+                <div class="hero__head">
+                    <h1 class="display">Revenue is not lost <em>inside</em><span class="step">systems.</span></h1>
+                    <p class="lede hero__lede">It is lost <em>between</em> them — at the joins, where one system hands
+                        the deal to the next and no one owns the handover. That is the whole of our work.</p>
+                    <div class="hero__actions">
+                        <a href="contact.html" class="link">Book a systems review <span
+                                class="arrow">&rarr;</span></a>
+                        <a href="quote-to-cash.html" class="link link--quiet">Read our approach <span
+                                class="arrow">&rarr;</span></a>
                     </div>
-                    <div class="form-group">
-                        <label for="contactEmail" class="sr-only">Work Email</label>
-                        <input type="email" id="contactEmail" name="email" placeholder="Work Email" required
-                            aria-label="Your work email address">
-                    </div>
-                    <div class="form-group">
-                        <label for="contactMessage" class="sr-only">Message</label>
-                        <textarea id="contactMessage" name="message" placeholder="Tell us about your biggest weight..."
-                            rows="4" aria-label="Your message"></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary"
-                        aria-label="Submit contact form to schedule audit">Schedule Audit</button>
-                </form>
-            </div>
-        </div>
-    </section>
+                </div>
 
-    <footer>
-        <div class="container footer-content">
-            <img src="assets/new_logo_hq.png" alt="JINIX Solutions" class="logo-img" width="180" height="48"
-                loading="lazy">
-            <p>&copy; 2026 JINIX Solutions. Engineered for Growth.</p>
-            <div class="footer-powered">
-                <p>Powered by Expertise in: <strong>Salesforce, Zuora, Conga, BillingPlatform</strong></p>
+                <div class="hero__meter">
+                    <span class="stat" id="heroMeter">$0</span>
+                    <span class="label">Slipping away, right now</span>
+                    <span class="micro hero__meter-note">Illustrative simulation, not client data. The loss
+                        concentrates at the handoffs, not inside any one platform.</span>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="mailto:Solutions@jinix.co.in">Solutions@jinix.co.in</a>
-                <a href="#">LinkedIn</a>
-                <a href="#services">Services</a>
+
+            <aside class="spine" aria-label="The six stages">
+                <div class="spine__stage">
+                    <div class="spine__n">01</div>
+                    <div class="spine__t">Lead</div>
+                    <div class="spine__d">Routing, dedupe</div>
+                </div>
+                <div class="spine__stage is-leak">
+                    <div class="spine__n">02</div>
+                    <div class="spine__t">Quote</div>
+                    <div class="spine__d">CPQ guardrails</div>
+                </div>
+                <div class="spine__stage is-leak">
+                    <div class="spine__n">03</div>
+                    <div class="spine__t">Order</div>
+                    <div class="spine__d">Orchestration</div>
+                </div>
+                <div class="spine__stage is-leak">
+                    <div class="spine__n">04</div>
+                    <div class="spine__t">Bill</div>
+                    <div class="spine__d">Usage rating</div>
+                </div>
+                <div class="spine__stage">
+                    <div class="spine__n">05</div>
+                    <div class="spine__t">Recognise</div>
+                    <div class="spine__d">ASC 606</div>
+                </div>
+                <div class="spine__stage">
+                    <div class="spine__n">06</div>
+                    <div class="spine__t">Renew</div>
+                    <div class="spine__d">Uplift, churn</div>
+                </div>
+            </aside>
+
+            <canvas class="hero__front" id="heroFront" aria-hidden="true"></canvas>
+        </header>
+
+        <!-- ================= PLATFORM RAIL ================= -->
+        <section class="section--tight wrap" aria-labelledby="platforms-h">
+            <div class="opener">
+                <h2 class="label" id="platforms-h">Platforms we implement</h2>
+                <a href="platforms.html" class="opener__index">All platforms &rarr;</a>
+            </div>
+
+            <div class="platforms" data-reveal>
+                <div class="platform">
+                    <div class="platform__name">Salesforce</div>
+                    <div class="platform__modules">CPQ<br>Revenue Cloud<br>Sales Cloud</div>
+                </div>
+                <div class="platform">
+                    <div class="platform__name">Zuora</div>
+                    <div class="platform__modules">Billing<br>RevPro<br>Workflow</div>
+                </div>
+                <div class="platform">
+                    <div class="platform__name">BillingPlatform</div>
+                    <div class="platform__modules">Rating<br>Usage<br>Invoicing</div>
+                </div>
+                <div class="platform">
+                    <div class="platform__name">Conga</div>
+                    <div class="platform__modules">CLM<br>CPQ<br>Document Gen</div>
+                </div>
+                <div class="platform">
+                    <div class="platform__name">NetSuite</div>
+                    <div class="platform__modules">ARM<br>SuiteBilling<br>GL</div>
+                </div>
+            </div>
+
+            <p class="micro platforms__note">Platform names are trademarks of their respective owners. JINIX Solutions
+                is an independent consultancy and is not affiliated with, endorsed by, or a reseller for these vendors.
+            </p>
+        </section>
+
+        <!-- ================= THESIS ================= -->
+        <section class="section band-alt" aria-labelledby="thesis-h">
+            <div class="wrap thesis">
+                <div class="thesis__body" data-reveal>
+                    <span class="label" id="thesis-h">01 &mdash; The problem</span>
+                    <blockquote class="thesis__quote">Most billing failures are not billing failures. They are
+                        order-capture failures that took ninety days to surface.</blockquote>
+                    <p class="lede" style="margin-top:32px">By the time finance sees the error, the deal is signed, the
+                        service is live, and the customer has been invoiced wrong twice. The fix is never in the billing
+                        system alone — it is in the handoffs.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ================= THE FLOW (signature) ================= -->
+        <section class="section band-dark" aria-labelledby="flow-h">
+            <div class="wrap">
+                <div class="opener">
+                    <h2 class="label" id="flow-h">02 &mdash; The Quote-to-Cash spine</h2>
+                    <span class="opener__index">06 stages</span>
+                </div>
+            </div>
+
+            <div class="wrap flow" id="flow">
+                <div class="flow__rail">
+                    <div class="flow__rail-fill" id="flowRail"></div>
+                </div>
+
+                <div class="flow__steps">
+                    <div class="flow__step">
+                        <div class="flow__num">01</div>
+                        <h3 class="flow__name">Lead</h3>
+                        <p class="flow__desc">Territory routing, deduplication, and a clean handoff into opportunity.
+                        </p>
+                        <ul class="flow__items">
+                            <li>Lead-to-account</li>
+                            <li>Dedupe rules</li>
+                            <li>Pipeline hygiene</li>
+                        </ul>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__num">02</div>
+                        <h3 class="flow__name">Quote</h3>
+                        <p class="flow__desc">CPQ with guardrails — complex bundles priced correctly the first time.</p>
+                        <ul class="flow__items">
+                            <li>Product catalog</li>
+                            <li>Approval matrix</li>
+                            <li>Ramp &amp; multi-year</li>
+                        </ul>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__num">03</div>
+                        <h3 class="flow__name">Order</h3>
+                        <p class="flow__desc">Signature to provisioning, with the order as the single source of truth.
+                        </p>
+                        <ul class="flow__items">
+                            <li>Order orchestration</li>
+                            <li>Provisioning hooks</li>
+                            <li>Amendment logic</li>
+                        </ul>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__num">04</div>
+                        <h3 class="flow__name">Bill</h3>
+                        <p class="flow__desc">Usage rating, invoicing, and dunning across currencies and entities.</p>
+                        <ul class="flow__items">
+                            <li>Rating engine</li>
+                            <li>Multi-currency</li>
+                            <li>Dunning &amp; collections</li>
+                        </ul>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__num">05</div>
+                        <h3 class="flow__name">Recognise</h3>
+                        <p class="flow__desc">ASC 606 schedules that survive an audit without a spreadsheet.</p>
+                        <ul class="flow__items">
+                            <li>SSP analysis</li>
+                            <li>Carve-outs</li>
+                            <li>Deferred revenue</li>
+                        </ul>
+                    </div>
+                    <div class="flow__step">
+                        <div class="flow__num">06</div>
+                        <h3 class="flow__name">Renew</h3>
+                        <p class="flow__desc">Co-terming, uplifts, and churn signals caught before the renewal date.</p>
+                        <ul class="flow__items">
+                            <li>Renewal quoting</li>
+                            <li>Uplift logic</li>
+                            <li>Churn signals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CAPABILITIES INDEX ================= -->
+        <section class="section wrap" aria-labelledby="cap-h">
+            <div class="opener">
+                <h2 class="label" id="cap-h">03 &mdash; Capabilities</h2>
+                <span class="opener__index">06</span>
+            </div>
+
+            <div class="index">
+                <a class="index__row" href="quote-to-cash.html">
+                    <span class="index__num">01</span>
+                    <span class="index__name">CPQ Implementation</span>
+                    <span class="index__meta">Salesforce CPQ &middot; Conga</span>
+                    <span class="index__arrow">&rarr;</span>
+                </a>
+                <a class="index__row" href="quote-to-cash.html">
+                    <span class="index__num">02</span>
+                    <span class="index__name">Subscription &amp; Usage Billing</span>
+                    <span class="index__meta">Zuora &middot; BillingPlatform</span>
+                    <span class="index__arrow">&rarr;</span>
+                </a>
+                <a class="index__row" href="quote-to-cash.html">
+                    <span class="index__num">03</span>
+                    <span class="index__name">Revenue Recognition</span>
+                    <span class="index__meta">ASC 606 &middot; Zuora RevPro</span>
+                    <span class="index__arrow">&rarr;</span>
+                </a>
+                <a class="index__row" href="quote-to-cash.html">
+                    <span class="index__num">04</span>
+                    <span class="index__name">Q2C Architecture</span>
+                    <span class="index__meta">Systems design</span>
+                    <span class="index__arrow">&rarr;</span>
+                </a>
+                <a class="index__row" href="quote-to-cash.html">
+                    <span class="index__num">05</span>
+                    <span class="index__name">Platform Migration</span>
+                    <span class="index__meta">Legacy &rarr; modern stack</span>
+                    <span class="index__arrow">&rarr;</span>
+                </a>
+                <a class="index__row" href="quote-to-cash.html">
+                    <span class="index__num">06</span>
+                    <span class="index__name">Fractional RevOps</span>
+                    <span class="index__meta">Ongoing advisory</span>
+                    <span class="index__arrow">&rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= METRICS ================= -->
+        <section class="section--tight wrap" aria-labelledby="metrics-h">
+            <div class="opener">
+                <h2 class="label" id="metrics-h">04 &mdash; Outcomes</h2>
+                <a href="work.html" class="opener__index">All engagements &rarr;</a>
+            </div>
+
+            <div class="metrics" data-reveal>
+                <div class="metric">
+                    <div class="stat metric__value">8d &rarr; 4d</div>
+                    <span class="label metric__label">Month-end close</span>
+                    <span class="micro metric__note">Global fintech. Median across the two quarters following
+                        migration.</span>
+                </div>
+                <div class="metric">
+                    <div class="stat metric__value">100%</div>
+                    <span class="label metric__label">ASC 606 accuracy</span>
+                    <span class="micro metric__note">Enterprise SaaS, $200M+ ARR. Zero audit findings, first full
+                        cycle.</span>
+                </div>
+                <div class="metric">
+                    <div class="stat metric__value">28% &rarr; 13%</div>
+                    <span class="label metric__label">Annual churn</span>
+                    <span class="micro metric__note">IoT platform. Twelve months after renewal automation went
+                        live.</span>
+                </div>
+                <div class="metric">
+                    <div class="stat metric__value">50,000+</div>
+                    <span class="label metric__label">Users migrated</span>
+                    <span class="micro metric__note">Global fintech. Five legacy billing systems, zero billing
+                        errors.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= FINANCIAL CRIME (second practice) ================= -->
+        <section class="section band-dark" aria-labelledby="fincrime-h">
+            <div class="wrap">
+                <div class="opener">
+                    <h2 class="label" id="fincrime-h">05 &mdash; Second practice</h2>
+                    <span class="opener__index">Financial Crime</span>
+                </div>
+
+                <div class="practice">
+                    <div class="practice__head" data-reveal>
+                        <h3 class="h2">The other system you<br>cannot afford to get wrong.</h3>
+                        <p class="lede" style="margin-top:28px">The same discipline that stops revenue leaking through a
+                            billing stack stops illicit money moving through a financial one. Our Financial Crime
+                            practice builds and remediates the controls that regulators actually test.</p>
+                        <div style="margin-top:36px">
+                            <a href="financial-crime.html" class="link">Explore the practice <span
+                                    class="arrow">&rarr;</span></a>
+                        </div>
+                    </div>
+
+                    <div class="practice__list" data-reveal>
+                        <div class="practice__item">
+                            <span class="practice__item-num">01</span>
+                            <div>
+                                <div class="practice__item-name">Assess &amp; assure</div>
+                                <p class="practice__item-desc">Programme, risk and control assessments; audit support and
+                                    corrective-action validation.</p>
+                            </div>
+                        </div>
+                        <div class="practice__item">
+                            <span class="practice__item-num">02</span>
+                            <div>
+                                <div class="practice__item-name">Regulatory remediation</div>
+                                <p class="practice__item-desc">Examination readiness, remediation planning and execution,
+                                    regulatory change.</p>
+                            </div>
+                        </div>
+                        <div class="practice__item">
+                            <span class="practice__item-num">03</span>
+                            <div>
+                                <div class="practice__item-name">Transaction monitoring</div>
+                                <p class="practice__item-desc">Scenario design, threshold tuning, model validation, and
+                                    alert-quality analysis.</p>
+                            </div>
+                        </div>
+                        <div class="practice__item">
+                            <span class="practice__item-num">04</span>
+                            <div>
+                                <div class="practice__item-name">Fraud &amp; forensics</div>
+                                <p class="practice__item-desc">Fraud risk management, internal investigations, and
+                                    third-party due diligence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WORK ================= -->
+        <section class="section wrap" aria-labelledby="work-h">
+            <div class="opener">
+                <h2 class="label" id="work-h">06 &mdash; Selected work</h2>
+                <a href="work.html" class="opener__index">All work &rarr;</a>
+            </div>
+
+            <div class="dossier">
+                <a class="dossier__row" href="case-study-fintech.html">
+                    <div class="dossier__meta">
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Industry</span><span
+                                class="dossier__meta-val">Global fintech</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Scope</span><span
+                                class="dossier__meta-val">Billing consolidation</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Systems</span><span
+                                class="dossier__meta-val">5 &rarr; 1</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Client</span><span
+                                class="dossier__meta-val">Anonymised</span></div>
+                    </div>
+                    <div>
+                        <h3 class="dossier__outcome">Five legacy billing systems, folded into one engine with no revenue
+                            disruption.</h3>
+                        <p class="dossier__body">Manual reconciliation was consuming 80+ hours a month and month-end
+                            close ran to eight days. We consolidated the stack, automated the quote-to-revenue path, and
+                            rebuilt reporting on a single source of truth.</p>
+                        <span class="link link--quiet">Read the case study <span class="arrow">&rarr;</span></span>
+                    </div>
+                    <div class="dossier__figure">
+                        <div class="stat">4 days</div>
+                        <span class="label">Close time removed</span>
+                    </div>
+                </a>
+
+                <a class="dossier__row" href="case-study-saas.html">
+                    <div class="dossier__meta">
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Industry</span><span
+                                class="dossier__meta-val">Enterprise SaaS</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Scale</span><span
+                                class="dossier__meta-val">$200M+ ARR</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Scope</span><span
+                                class="dossier__meta-val">ASC 606 automation</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Client</span><span
+                                class="dossier__meta-val">Anonymised</span></div>
+                    </div>
+                    <div>
+                        <h3 class="dossier__outcome">Revenue recognition off the spreadsheet, in time for IPO diligence.
+                        </h3>
+                        <p class="dossier__body">Multi-element arrangements, variable consideration and contract
+                            modifications were being handled by hand. We built the ASC 606 engine, the audit trail, and
+                            the waterfall reporting behind it.</p>
+                        <span class="link link--quiet">Read the case study <span class="arrow">&rarr;</span></span>
+                    </div>
+                    <div class="dossier__figure">
+                        <div class="stat">3 days</div>
+                        <span class="label">Audit prep, from 3 weeks</span>
+                    </div>
+                </a>
+
+                <a class="dossier__row" href="case-study-iot.html">
+                    <div class="dossier__meta">
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Industry</span><span
+                                class="dossier__meta-val">IoT platform</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Scale</span><span
+                                class="dossier__meta-val">15,000+ devices</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Scope</span><span
+                                class="dossier__meta-val">Usage billing &amp; renewals</span></div>
+                        <div class="dossier__meta-row"><span class="dossier__meta-key">Client</span><span
+                                class="dossier__meta-val">Anonymised</span></div>
+                    </div>
+                    <div>
+                        <h3 class="dossier__outcome">Customers stopped being surprised by their invoices — and stopped
+                            leaving.</h3>
+                        <p class="dossier__body">Variable usage billing was driving payment disputes and a 28% annual
+                            churn rate. We shipped usage transparency, committed-use discounts, overage protection, and
+                            renewal workflows that start 90 days out.</p>
+                        <span class="link link--quiet">Read the case study <span class="arrow">&rarr;</span></span>
+                    </div>
+                    <div class="dossier__figure">
+                        <div class="stat">15pt</div>
+                        <span class="label">Churn reduction</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- ================= ENGAGEMENT MODEL ================= -->
+        <section class="section--tight wrap" aria-labelledby="engage-h">
+            <div class="opener">
+                <h2 class="label" id="engage-h">07 &mdash; How we engage</h2>
+                <span class="opener__index">Four models</span>
+            </div>
+
+            <div class="table-wrap">
+                <table class="spec-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Engagement</th>
+                            <th scope="col">Typical duration</th>
+                            <th scope="col">Team</th>
+                            <th scope="col">What you get</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Systems assessment</td>
+                            <td>2&ndash;3 weeks</td>
+                            <td>1&ndash;2</td>
+                            <td>Diagnostic of the current Q2C path, a prioritised remediation roadmap, and a costed
+                                plan.</td>
+                        </tr>
+                        <tr>
+                            <td>Implementation</td>
+                            <td>10&ndash;16 weeks</td>
+                            <td>3&ndash;5</td>
+                            <td>Build, configuration, integration, UAT, and cutover on your chosen platform.</td>
+                        </tr>
+                        <tr>
+                            <td>Platform migration</td>
+                            <td>12&ndash;24 weeks</td>
+                            <td>4&ndash;6</td>
+                            <td>Data migration, dual-run, reconciliation, and decommissioning of the legacy stack.</td>
+                        </tr>
+                        <tr>
+                            <td>Fractional RevOps</td>
+                            <td>Ongoing, monthly</td>
+                            <td>1</td>
+                            <td>Standing advisory, backlog ownership, and escalation cover for your revenue systems.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="section band-dark" id="contact" aria-labelledby="cta-h">
+            <div class="wrap">
+                <div class="opener">
+                    <h2 class="label" id="cta-h">08 &mdash; Start here</h2>
+                    <span class="opener__index">solutions@jinix.co.in</span>
+                </div>
+
+                <div class="practice">
+                    <div class="practice__head" data-reveal>
+                        <h3 class="h2">Tell us where the<br>numbers stop agreeing.</h3>
+                        <p class="lede" style="margin-top:28px">A systems review takes two to three weeks and ends with a
+                            written diagnostic you own — whether or not you engage us to fix it.</p>
+                        <p class="micro" style="margin-top:32px">Or write to <a href="mailto:solutions@jinix.co.in"
+                                style="color:var(--teal-lift)">solutions@jinix.co.in</a></p>
+                    </div>
+
+                    <div class="practice__list" style="border-top:none">
+                        <form class="form" id="contactForm" novalidate>
+                            <div class="field">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Work email</label>
+                                <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                            </div>
+                            <div class="field">
+                                <label for="message">Where it hurts</label>
+                                <textarea id="message" name="message" rows="3"
+                                    placeholder="Billing, rev rec, CPQ, compliance…"></textarea>
+                            </div>
+                            <button type="submit" class="link link--primary form__submit">Request a review <span
+                                    class="arrow">&rarr;</span></button>
+                            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <div class="footer__cols">
+                <div class="footer__col">
+                    <a href="index.html" class="brand">
+                        <img src="assets/logo.svg" alt="" class="brand__mark" width="24" height="24">
+                        <span class="brand__word">Jinix</span>
+                    </a>
+                    <p class="footer__blurb">An independent consultancy for the two systems a business cannot afford to
+                        get wrong: the one that collects its revenue, and the one that protects it.</p>
+                </div>
+                <div class="footer__col">
+                    <h3>Practices</h3>
+                    <ul>
+                        <li><a href="quote-to-cash.html">Quote-to-Cash</a></li>
+                        <li><a href="financial-crime.html">Financial Crime</a></li>
+                        <li><a href="platforms.html">Platforms</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3>Firm</h3>
+                    <ul>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h3>Elsewhere</h3>
+                    <ul>
+                        <li><a href="mailto:solutions@jinix.co.in">solutions@jinix.co.in</a></li>
+                        <li><a href="https://www.linkedin.com/company/jinix-solutions" rel="noopener">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__meta">
+                <span class="micro">&copy; 2026 JINIX Solutions. All rights reserved.</span>
+                <span class="micro">Set in Instrument Serif &amp; Instrument Sans. Built in hand-written HTML &amp; CSS.</span>
             </div>
         </div>
+        <div class="footer__wordmark" aria-hidden="true">JINIX</div>
     </footer>
-
-    <!-- Script moved to head with defer for faster parsing -->
 </body>
 
 </html>

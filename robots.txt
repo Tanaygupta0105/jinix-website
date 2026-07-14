@@ -1,18 +1,10 @@
-# JINIX Solutions - Robots.txt
-# Professional SEO Configuration for Search Engines
+# JINIX Solutions
+# https://jinix.co.in
 
 User-agent: *
 Allow: /
 
-# Sitemap Location
+# Assets must stay crawlable — blocking them breaks logo indexing and
+# social-card previews (Open Graph fetchers read /assets/og.png).
+
 Sitemap: https://jinix.co.in/sitemap.xml
-
-# Block common bot resources (optional - for performance)
-User-agent: *
-Disallow: /assets/
-Allow: /assets/logo.jpg
-
-# Block malicious bots (optional)
-User-agent: SemrushBot
-User-agent: AhrefsBot
-Crawl-delay: 10
