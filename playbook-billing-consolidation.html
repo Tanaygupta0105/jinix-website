@@ -181,6 +181,59 @@
                     <span class="opener__index">04 movements</span>
                 </div>
 
+
+                <figure class="diagram" data-reveal>
+                    <div class="diagram__scroll">
+                        <svg viewBox="0 0 900 280" role="img"
+                        aria-label="Diagram of a dual-run. The same month's subscriptions and usage go into both the old billing system and the new one. Each produces an invoice. The two invoices are compared line by line. If they differ, the new system is fixed and the run repeats. Only when they match is the old system switched off.">
+                        <marker id="dr-a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+                            <path d="M0 0 L7 3.5 L0 7 z" class="dg-fill-ink" />
+                        </marker>
+
+                        <!-- source -->
+                        <rect x="1" y="105" width="150" height="66" class="dg-rule dg-fill-paper" />
+                        <text x="76" y="132" text-anchor="middle" class="dg-t">One month</text>
+                        <text x="76" y="152" text-anchor="middle" class="dg-s">the same data, twice</text>
+
+                        <!-- splits -->
+                        <path d="M151 138 L185 138 L185 60 L235 60" class="dg-rule" marker-end="url(#dr-a)" />
+                        <path d="M151 138 L185 138 L185 216 L235 216" class="dg-rule" marker-end="url(#dr-a)" />
+
+                        <!-- the two systems -->
+                        <rect x="243" y="28" width="190" height="64" class="dg-rule dg-fill-paper" />
+                        <text x="338" y="54" text-anchor="middle" class="dg-t">Old system</text>
+                        <text x="338" y="74" text-anchor="middle" class="dg-s">bills the month</text>
+
+                        <rect x="243" y="184" width="190" height="64" class="dg-blue dg-fill-paper" />
+                        <text x="338" y="210" text-anchor="middle" class="dg-t">New system</text>
+                        <text x="338" y="230" text-anchor="middle" class="dg-s">bills the same month</text>
+
+                        <!-- into the comparison -->
+                        <path d="M433 60 L483 60 L483 122" class="dg-rule" marker-end="url(#dr-a)" />
+                        <path d="M433 216 L483 216 L483 154" class="dg-rule" marker-end="url(#dr-a)" />
+
+                        <rect x="483" y="105" width="180" height="66" class="dg-ink dg-fill-paper" />
+                        <text x="573" y="132" text-anchor="middle" class="dg-t">Compare</text>
+                        <text x="573" y="152" text-anchor="middle" class="dg-s">line by line</text>
+
+                        <!-- they differ: fix and run it again -->
+                        <path d="M573 171 L573 262 L338 262 L338 248" class="dg-blue dg-dash" marker-end="url(#dr-a)" />
+                        <text x="456" y="278" text-anchor="middle" class="dg-n">They differ — fix it, run it again</text>
+
+                        <!-- they match: cut over -->
+                        <path d="M663 138 L727 138" class="dg-teal" marker-end="url(#dr-a)" />
+                        <text x="695" y="128" text-anchor="middle" class="dg-n">They match</text>
+
+                        <rect x="735" y="105" width="164" height="66" class="dg-teal dg-fill-paper" />
+                        <text x="817" y="132" text-anchor="middle" class="dg-t">Switch over</text>
+                        <text x="817" y="152" text-anchor="middle" class="dg-s">turn the old one off</text>
+                    </svg>
+                    </div>
+                    <p class="diagram__hint" aria-hidden="true"><span>Scroll to see the whole drawing</span> &rarr;</p>
+                    <figcaption>Nobody is moved until the two systems agree. If the invoices differ, the
+                        difference is the bug — we fix it and run the month again. The old system stays on until
+                        there is nothing left to disagree about.</figcaption>
+                </figure>
                 <div class="blocks" data-reveal>
                     <div class="block">
                         <span class="label block__num">01</span>

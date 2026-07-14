@@ -1744,3 +1744,269 @@ a.opener__index:hover {
         margin-bottom: 10px;
     }
 }
+
+/* ==========================================================================
+   Diagrams — drawn, not decorated. Every one of these carries information the
+   prose cannot: a shape, a sequence, a loop. Inline SVG so they inherit the
+   ink palette and re-colour themselves inside a dark band. No icons, no images.
+   ========================================================================== */
+
+.diagram {
+    margin-block: clamp(36px, 5vw, 64px);
+}
+
+.diagram svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.diagram figcaption {
+    margin-top: 18px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
+    font-size: var(--fs-micro);
+    color: var(--ink-300);
+    max-width: 70ch;
+}
+
+.band-dark .diagram figcaption {
+    border-top-color: var(--d-rule);
+    color: var(--d-muted);
+}
+
+/* strokes */
+.dg-rule {
+    stroke: var(--rule);
+    fill: none;
+    stroke-width: 1;
+}
+
+.dg-ink {
+    stroke: var(--ink-900);
+    fill: none;
+    stroke-width: 1.4;
+}
+
+.dg-blue {
+    stroke: var(--blue);
+    fill: none;
+    stroke-width: 1.4;
+}
+
+.dg-teal {
+    stroke: var(--teal);
+    fill: none;
+    stroke-width: 1.4;
+}
+
+.dg-dash {
+    stroke-dasharray: 3 4;
+}
+
+.band-dark .dg-rule {
+    stroke: var(--d-rule);
+}
+
+.band-dark .dg-ink {
+    stroke: var(--d-text);
+}
+
+.band-dark .dg-blue,
+.band-dark .dg-teal {
+    stroke: var(--d-teal);
+}
+
+/* fills */
+.dg-fill-paper {
+    fill: var(--paper);
+}
+
+.band-dark .dg-fill-paper {
+    fill: var(--d-bg);
+}
+
+.dg-fill-ink {
+    fill: var(--ink-900);
+    stroke: none;
+}
+
+.band-dark .dg-fill-ink {
+    fill: var(--d-teal);
+}
+
+/* type inside the drawing */
+.dg-t {
+    font-family: var(--serif);
+    font-size: 15px;
+    fill: var(--ink-900);
+    stroke: none;
+}
+
+.dg-s {
+    font-family: var(--sans);
+    font-size: 11px;
+    fill: var(--ink-500);
+    stroke: none;
+}
+
+.dg-n {
+    font-family: var(--sans);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    fill: var(--ink-300);
+    stroke: none;
+    text-transform: uppercase;
+}
+
+.band-dark .dg-t {
+    fill: var(--d-text);
+}
+
+.band-dark .dg-s {
+    fill: var(--d-muted);
+}
+
+.band-dark .dg-n {
+    fill: var(--d-muted);
+}
+
+@media (max-width: 700px) {
+    .dg-t {
+        font-size: 17px;
+    }
+
+    .dg-s {
+        font-size: 12px;
+    }
+}
+
+/* ==========================================================================
+   Mobile: give the text room to breathe.
+
+   The long pages were designed at desktop measure, where a hairline rule and
+   13px of padding is enough to separate two items. On a phone the same items
+   run to four or five lines each and the page turns into a wall. The fix is
+   rhythm, not cuts: more air between things, and a clear step in size between
+   a heading and the body under it.
+   ========================================================================== */
+
+@media (max-width: 700px) {
+
+    /* Wide diagrams stay legible by scrolling, rather than shrinking their
+       labels to 5px. The scroll is contained — the page never moves sideways. */
+    /* A drawing that scrolls needs to say so, or it just looks cropped. */
+    .diagram {
+        position: relative;
+    }
+
+    .diagram__scroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-inline: calc(var(--page-margin) * -1);
+        padding-inline: var(--page-margin);
+    }
+
+    .diagram svg {
+        min-width: 620px;
+    }
+
+    .diagram__hint {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 12px;
+        font-size: var(--fs-micro);
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-300);
+    }
+
+    .band-dark .diagram__hint {
+        color: var(--d-muted);
+    }
+
+    .diagram figcaption {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    /* Hairline lists: the rules were touching the text. Let them separate. */
+    .list-rule li {
+        display: block;
+        padding-block: 20px;
+        line-height: 1.62;
+    }
+
+    .list-rule li::before {
+        display: block;
+        margin-bottom: 8px;
+        padding-top: 0;
+    }
+
+    /* Hairline blocks */
+    .block {
+        padding-block: 28px;
+    }
+
+    .block__name {
+        margin-bottom: 12px;
+    }
+
+    .block__desc {
+        line-height: 1.62;
+    }
+
+    /* Running prose */
+    .prose>*+* {
+        margin-top: 1.5em;
+    }
+
+    .prose p,
+    .body {
+        line-height: 1.65;
+    }
+
+    /* Section openers were sitting right on top of the content below them */
+    .opener {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        margin-bottom: 32px;
+    }
+
+    .opener__index {
+        margin-left: 0;
+    }
+
+    /* The capability index rows */
+    .index__row {
+        padding-block: 22px;
+    }
+
+    /* Metric cells and spec rows */
+    .spec__row {
+        padding-block: 13px;
+    }
+
+    /* The engagement table is the densest thing on a phone */
+    .spec-table td {
+        padding-block: 18px;
+        line-height: 1.6;
+    }
+
+    /* Stop headings colliding with the paragraph beneath */
+    .h2,
+    .h3 {
+        margin-bottom: 4px;
+    }
+}
+
+/* The scroll hint exists only where the diagram actually scrolls. Scoped to the
+   desktop query so it cannot override the mobile rule by source order. */
+@media (min-width: 701px) {
+    .diagram__hint {
+        display: none;
+    }
+}

@@ -174,6 +174,44 @@
                     <span class="opener__index">04 movements</span>
                 </div>
 
+
+                <figure class="diagram" data-reveal>
+                    <div class="diagram__scroll">
+                        <svg viewBox="0 0 890 190" role="img"
+                        aria-label="Diagram of a usage billing pipeline. Events of what the customer used are cleaned of duplicates, added up per customer and period, priced against the plan, and turned into an invoice. An arrow underneath shows the whole pipeline can be run again from the raw events and must produce exactly the same invoice.">
+                        <marker id="us-a" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+                            <path d="M0 0 L7 3.5 L0 7 z" class="dg-fill-ink" />
+                        </marker>
+                        <rect x="0" y="40" width="152" height="76" class="dg-rule dg-fill-paper" />
+                        <text x="76.0" y="72" text-anchor="middle" class="dg-t">Events</text>
+                        <text x="76.0" y="92" text-anchor="middle" class="dg-s">what the customer used</text>
+                        <path d="M152 78 L175 78" class="dg-rule" marker-end="url(#us-a)" />
+                        <rect x="178" y="40" width="152" height="76" class="dg-rule dg-fill-paper" />
+                        <text x="254.0" y="72" text-anchor="middle" class="dg-t">Clean</text>
+                        <text x="254.0" y="92" text-anchor="middle" class="dg-s">drop the duplicates</text>
+                        <path d="M330 78 L353 78" class="dg-rule" marker-end="url(#us-a)" />
+                        <rect x="356" y="40" width="152" height="76" class="dg-rule dg-fill-paper" />
+                        <text x="432.0" y="72" text-anchor="middle" class="dg-t">Add up</text>
+                        <text x="432.0" y="92" text-anchor="middle" class="dg-s">group by customer, by period</text>
+                        <path d="M508 78 L531 78" class="dg-rule" marker-end="url(#us-a)" />
+                        <rect x="534" y="40" width="152" height="76" class="dg-rule dg-fill-paper" />
+                        <text x="610.0" y="72" text-anchor="middle" class="dg-t">Price it</text>
+                        <text x="610.0" y="92" text-anchor="middle" class="dg-s">apply the plan, caps, discounts</text>
+                        <path d="M686 78 L709 78" class="dg-rule" marker-end="url(#us-a)" />
+                        <rect x="712" y="40" width="152" height="76" class="dg-teal dg-fill-paper" />
+                        <text x="788.0" y="72" text-anchor="middle" class="dg-t">Invoice</text>
+                        <text x="788.0" y="92" text-anchor="middle" class="dg-s">the bill they receive</text>
+
+                        <!-- and you can run the whole thing again -->
+                        <path d="M814 116 L814 152 L76 152 L76 120" class="dg-blue dg-dash" marker-end="url(#us-a)" />
+                        <text x="445" y="170" text-anchor="middle" class="dg-n">Run it again from the raw events — you must get the same invoice</text>
+                    </svg>
+                    </div>
+                    <p class="diagram__hint" aria-hidden="true"><span>Scroll to see the whole drawing</span> &rarr;</p>
+                    <figcaption>The raw events are never thrown away, so the whole pipeline can be re-run from
+                        the start. Run it twice on the same month and you must get exactly the same bill. If you do
+                        not, you do not have a billing system — you have an opinion.</figcaption>
+                </figure>
                 <div class="blocks" data-reveal>
                     <div class="block">
                         <span class="label block__num">01</span>
