@@ -350,8 +350,9 @@ a.opener__index:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 24px 0 22px;
+    justify-content: center;
+    gap: clamp(32px, 6vh, 64px);
+    padding: 24px 0;
 }
 
 .brand {
