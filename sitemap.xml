@@ -30,10 +30,31 @@
     </url>
 
     <url>
-        <loc>https://jinix.co.in/work.html</loc>
+        <loc>https://jinix.co.in/playbooks.html</loc>
         <lastmod>2026-07-14</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://jinix.co.in/playbook-billing-consolidation.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://jinix.co.in/playbook-revenue-recognition.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://jinix.co.in/playbook-usage-billing.html</loc>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
     </url>
 
     <url>
@@ -45,27 +66,6 @@
 
     <url>
         <loc>https://jinix.co.in/about.html</loc>
-        <lastmod>2026-07-14</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://jinix.co.in/case-study-fintech.html</loc>
-        <lastmod>2026-07-14</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://jinix.co.in/case-study-saas.html</loc>
-        <lastmod>2026-07-14</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.6</priority>
-    </url>
-
-    <url>
-        <loc>https://jinix.co.in/case-study-iot.html</loc>
         <lastmod>2026-07-14</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>

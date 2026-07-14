@@ -1586,15 +1586,17 @@ a.opener__index:hover {
     color: var(--d-muted);
 }
 
+/* Set the whole wordmark, uncropped. Instrument Serif's J carries a descender,
+   so the old bleed-off-the-bottom trick sliced the one letter the brand needs. */
 .footer__wordmark {
     font-family: var(--serif);
     font-weight: 400;
-    font-size: clamp(4.5rem, 17vw, 15rem);
-    line-height: 0.8;
+    font-size: clamp(4rem, 15vw, 13rem);
+    line-height: 1.06;
     letter-spacing: -0.02em;
     color: transparent;
     -webkit-text-stroke: 1px var(--d-rule);
-    margin-bottom: -0.13em;
+    padding-bottom: clamp(20px, 2.5vw, 40px);
     user-select: none;
     text-align: center;
 }
