@@ -53,7 +53,7 @@
     --fs-micro: 0.6875rem;
 
     /* ---- Layout ---------------------------------------------------------- */
-    --rail: 64px;
+    --rail: 76px;
     --page-margin: clamp(24px, 4vw, 72px);
     --max-w: 1240px;
     --gutter: 24px;
@@ -379,8 +379,8 @@ a.opener__index:hover {
 }
 
 .brand__mark {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 /* The wordmark rides the rail on desktop; the mark alone would be too quiet */
@@ -404,9 +404,9 @@ a.opener__index:hover {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     white-space: nowrap;
-    font-size: var(--fs-label);
+    font-size: 0.78rem;
     font-weight: 500;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--ink-300);
     transition: color var(--d-hover) var(--ease);
@@ -451,12 +451,12 @@ a.opener__index:hover {
    menu fits rather than running off the bottom. */
 @media (max-height: 880px) {
     .nav__link {
-        font-size: 0.625rem;
-        letter-spacing: 0.14em;
+        font-size: 0.7rem;
+        letter-spacing: 0.11em;
     }
 
     .nav__links {
-        gap: 14px;
+        gap: 13px;
     }
 }
 
