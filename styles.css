@@ -345,14 +345,30 @@ a.opener__index:hover {
     background: linear-gradient(90deg, var(--paper-2), var(--paper));
 }
 
+/* The logo is pinned to the top and the links float in the space beneath it.
+   It used to centre the whole group, which meant that on any laptop shorter
+   than ~880px the block was taller than the rail and overflowed BOTH ends —
+   logo off the top of the screen, Contact off the bottom. */
 .nav__inner {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: clamp(32px, 6vh, 64px);
+    justify-content: flex-start;
+    gap: 0;
     padding: 24px 0;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.nav__inner::-webkit-scrollbar {
+    display: none;
+}
+
+/* auto margins centre the links in whatever room is left, and collapse first
+   when there isn't enough — so the logo and the last link always survive */
+.nav__links {
+    margin-block: auto;
 }
 
 .brand {
@@ -380,7 +396,8 @@ a.opener__index:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: clamp(16px, 3vh, 30px);
+    padding-block: 24px;
 }
 
 .nav__link {
@@ -428,6 +445,19 @@ a.opener__index:hover {
 .arrow {
     display: inline-block;
     transition: transform var(--d-hover) var(--ease);
+}
+
+/* Six rotated labels are tall. On a short laptop, tighten them so the whole
+   menu fits rather than running off the bottom. */
+@media (max-height: 880px) {
+    .nav__link {
+        font-size: 0.625rem;
+        letter-spacing: 0.14em;
+    }
+
+    .nav__links {
+        gap: 14px;
+    }
 }
 
 /* Rail folds into a top bar below the breakpoint */
