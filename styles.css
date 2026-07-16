@@ -746,6 +746,24 @@ a.opener__index:hover {
     .hero__meter-note {
         display: none;
     }
+
+    /* On a phone the current has no column of its own — it sprawls behind the
+       text and competes with it. Fade it right back so the words stay clean and
+       it reads as a quiet background, not a second thing to look at. */
+    .hero__back,
+    .hero__front {
+        opacity: 0.4;
+    }
+
+    /* Keep the two hero links tight instead of a tall stacked block */
+    .hero__actions {
+        gap: 20px 28px;
+        margin-top: 28px;
+    }
+
+    .hero__meter {
+        margin-top: 4px;
+    }
 }
 
 /* ==========================================================================
