@@ -181,102 +181,45 @@
             </p>
         </section>
 
-        <!-- ================= THESIS ================= -->
-        <section class="section band-alt" aria-labelledby="thesis-h">
-            <div class="wrap thesis">
-                <div class="thesis__body" data-reveal>
-                    <span class="label" id="thesis-h">01 &mdash; The problem</span>
-                    <blockquote class="thesis__quote">Most billing problems are not billing problems. The order was
-                        taken down wrong months earlier. The invoice is only where it finally shows up.</blockquote>
-                    <p class="lede" style="margin-top:32px">By the time finance sees the error, the deal is signed, the
-                        customer is live, and the invoice has gone out wrong twice. A better billing system will not fix
-                        that. The problem sits between the systems you already own.</p>
-                </div>
+        <!-- ================= WHERE IT BREAKS ================= -->
+        <section class="section--tight wrap" aria-labelledby="breaks-h">
+            <div class="opener">
+                <h2 class="label" id="breaks-h">01 &mdash; Where it breaks</h2>
+                <span class="opener__index">Three handovers</span>
             </div>
 
-        </section>
-
-        <!-- ================= THE FLOW (signature) ================= -->
-        <section class="section band-dark" aria-labelledby="flow-h">
-            <div class="wrap">
-                <div class="opener">
-                    <h2 class="label" id="flow-h">02 &mdash; How a deal travels</h2>
-                    <span class="opener__index">06 stages</span>
+            <div class="blocks" data-reveal>
+                <div class="block">
+                    <span class="label block__num">Handover 01 &mdash; Quote to order</span>
+                    <h3 class="block__name">The order does not match the deal</h3>
+                    <p class="block__desc">Sales agreed something the order system cannot hold. A price that steps up
+                        each year. A discount that stops halfway through. Two contracts lined up to end on the same
+                        date. So somebody types it in by hand and makes a judgement call. That judgement call is now
+                        your contract. You find out when the customer disputes the first invoice, months later.</p>
                 </div>
-            </div>
-
-            <div class="wrap flow" id="flow">
-                <div class="flow__rail">
-                    <div class="flow__rail-fill" id="flowRail"></div>
+                <div class="block">
+                    <span class="label block__num">Handover 02 &mdash; Order to bill</span>
+                    <h3 class="block__name">The customer is billed for the wrong thing</h3>
+                    <p class="block__desc">The order says the customer is allowed one thing. The billing system thinks
+                        they bought another. Their usage gets charged against a plan they never signed. Neither system
+                        reports an error, because each is doing exactly what it was told to do. The only person who
+                        spots it is the customer, and only if the bill is too high.</p>
                 </div>
-
-                <div class="flow__steps">
-                    <div class="flow__step">
-                        <div class="flow__num">01</div>
-                        <h3 class="flow__name">Lead</h3>
-                        <p class="flow__desc">Someone shows interest. It reaches the right salesperson, once, and does
-                            not sit in three places at the same time.</p>
-                        <ul class="flow__items">
-                            <li>Matched to the right account</li>
-                            <li>Duplicates removed</li>
-                            <li>A pipeline you can trust</li>
-                        </ul>
-                    </div>
-                    <div class="flow__step">
-                        <div class="flow__num">02</div>
-                        <h3 class="flow__name">Quote</h3>
-                        <p class="flow__desc">The price the salesperson puts in front of the customer is a price the
-                            company actually agreed to sell.</p>
-                        <ul class="flow__items">
-                            <li>A product list everyone uses</li>
-                            <li>Who has to approve what</li>
-                            <li>Multi-year and stepped pricing</li>
-                        </ul>
-                    </div>
-                    <div class="flow__step">
-                        <div class="flow__num">03</div>
-                        <h3 class="flow__name">Order</h3>
-                        <p class="flow__desc">The deal is signed. Now the customer has to actually get the thing they
-                            bought, on the terms they bought it.</p>
-                        <ul class="flow__items">
-                            <li>The order gets set up</li>
-                            <li>The service is switched on</li>
-                            <li>Changes mid-contract</li>
-                        </ul>
-                    </div>
-                    <div class="flow__step">
-                        <div class="flow__num">04</div>
-                        <h3 class="flow__name">Bill</h3>
-                        <p class="flow__desc">The invoice goes out. It is right, it is in the right currency, and unpaid
-                            ones get chased.</p>
-                        <ul class="flow__items">
-                            <li>Working out the charge</li>
-                            <li>More than one currency</li>
-                            <li>Chasing unpaid invoices</li>
-                        </ul>
-                    </div>
-                    <div class="flow__step">
-                        <div class="flow__num">05</div>
-                        <h3 class="flow__name">Recognise</h3>
-                        <p class="flow__desc">Revenue lands on the books when it is earned, not when the invoice was
-                            sent. An auditor can follow every number.</p>
-                        <ul class="flow__items">
-                            <li>What each item is worth alone</li>
-                            <li>Splitting a bundled deal</li>
-                            <li>Revenue not yet earned</li>
-                        </ul>
-                    </div>
-                    <div class="flow__step">
-                        <div class="flow__num">06</div>
-                        <h3 class="flow__name">Renew</h3>
-                        <p class="flow__desc">The contract comes round again. You see it coming, you price it, and you
-                            know who is about to leave.</p>
-                        <ul class="flow__items">
-                            <li>Renewal quotes</li>
-                            <li>Price rises</li>
-                            <li>Early warning of churn</li>
-                        </ul>
-                    </div>
+                <div class="block">
+                    <span class="label block__num">Handover 03 &mdash; Bill to the books</span>
+                    <h3 class="block__name">The numbers will not survive an audit</h3>
+                    <p class="block__desc">Revenue gets booked against the invoice instead of against what you actually
+                        promised to deliver. When one deal bundles several things together, someone splits the money
+                        between them in a spreadsheet. Then the auditor asks how each of those prices was arrived at,
+                        and nobody can show the working.</p>
+                </div>
+                <div class="block">
+                    <span class="label block__num">The pattern</span>
+                    <h3 class="block__name">No system is at fault</h3>
+                    <p class="block__desc">Every platform is doing exactly what it was set up to do. The money goes
+                        missing in the handover between them. No vendor owns that space and no dashboard shows it. That
+                        is why buying a better billing system rarely fixes it. It is also why this is the whole of our
+                        work.</p>
                 </div>
             </div>
         </section>
@@ -284,7 +227,7 @@
         <!-- ================= CAPABILITIES INDEX ================= -->
         <section class="section wrap" aria-labelledby="cap-h">
             <div class="opener">
-                <h2 class="label" id="cap-h">03 &mdash; What we do</h2>
+                <h2 class="label" id="cap-h">02 &mdash; What we do</h2>
                 <span class="opener__index">06</span>
             </div>
 
@@ -328,54 +271,11 @@
             </div>
         </section>
 
-        <!-- ================= WHERE IT BREAKS ================= -->
-        <section class="section--tight wrap" aria-labelledby="breaks-h">
-            <div class="opener">
-                <h2 class="label" id="breaks-h">04 &mdash; Where it breaks</h2>
-                <span class="opener__index">Three handovers</span>
-            </div>
-
-            <div class="blocks" data-reveal>
-                <div class="block">
-                    <span class="label block__num">Handover 01 &mdash; Quote to order</span>
-                    <h3 class="block__name">The order does not match the deal</h3>
-                    <p class="block__desc">Sales agreed something the order system cannot hold. A price that steps up
-                        each year. A discount that stops halfway through. Two contracts lined up to end on the same
-                        date. So somebody types it in by hand and makes a judgement call. That judgement call is now
-                        your contract. You find out when the customer disputes the first invoice, months later.</p>
-                </div>
-                <div class="block">
-                    <span class="label block__num">Handover 02 &mdash; Order to bill</span>
-                    <h3 class="block__name">The customer is billed for the wrong thing</h3>
-                    <p class="block__desc">The order says the customer is allowed one thing. The billing system thinks
-                        they bought another. Their usage gets charged against a plan they never signed. Neither system
-                        reports an error, because each is doing exactly what it was told to do. The only person who
-                        spots it is the customer, and only if the bill is too high.</p>
-                </div>
-                <div class="block">
-                    <span class="label block__num">Handover 03 &mdash; Bill to the books</span>
-                    <h3 class="block__name">The numbers will not survive an audit</h3>
-                    <p class="block__desc">Revenue gets booked against the invoice instead of against what you actually
-                        promised to deliver. When one deal bundles several things together, someone splits the money
-                        between them in a spreadsheet. Then the auditor asks how each of those prices was arrived at,
-                        and nobody can show the working.</p>
-                </div>
-                <div class="block">
-                    <span class="label block__num">The pattern</span>
-                    <h3 class="block__name">No system is at fault</h3>
-                    <p class="block__desc">Every platform is doing exactly what it was set up to do. The money goes
-                        missing in the handover between them. No vendor owns that space and no dashboard shows it. That
-                        is why buying a better billing system rarely fixes it. It is also why this is the whole of our
-                        work.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- ================= FINANCIAL CRIME (second practice) ================= -->
         <section class="section band-dark" aria-labelledby="fincrime-h">
             <div class="wrap">
                 <div class="opener">
-                    <h2 class="label" id="fincrime-h">05 &mdash; Financial crime</h2>
+                    <h2 class="label" id="fincrime-h">03 &mdash; Financial crime</h2>
                     <span class="opener__index">Financial Crime</span>
                 </div>
 
@@ -432,7 +332,7 @@
         <!-- ================= PLAYBOOKS ================= -->
         <section class="section wrap" aria-labelledby="play-h">
             <div class="opener">
-                <h2 class="label" id="play-h">06 &mdash; Playbooks</h2>
+                <h2 class="label" id="play-h">04 &mdash; Playbooks</h2>
                 <a href="playbooks.html" class="opener__index">All playbooks &rarr;</a>
             </div>
 
@@ -461,53 +361,11 @@
             </div>
         </section>
 
-        <!-- ================= ENGAGEMENT MODEL ================= -->
-        <section class="section--tight wrap" aria-labelledby="engage-h">
-            <div class="opener">
-                <h2 class="label" id="engage-h">07 &mdash; How we work with you</h2>
-                <span class="opener__index">Four ways</span>
-            </div>
-
-            <div class="table-wrap">
-                <table class="spec-table">
-                    <thead>
-                        <tr>
-                            <th scope="col">What it is</th>
-                            <th scope="col">What you get</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Systems review</td>
-                            <td>We follow a deal through your systems, find where it breaks, and hand you a list of what
-                                to fix, in order, with costs.</td>
-                        </tr>
-                        <tr>
-                            <td>Build it</td>
-                            <td>We set it up on the platform you have chosen, connect it to your other systems, test it
-                                with your team, and take it live.</td>
-                        </tr>
-                        <tr>
-                            <td>Move platform</td>
-                            <td>We move the data, run the old and new systems side by side until they agree, then switch
-                                the old one off.</td>
-                        </tr>
-                        <tr>
-                            <td>Ongoing support</td>
-                            <td>We own the queue of changes to your revenue systems, help you close the books each
-                                month, and pick up the phone when something breaks.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
         <!-- ================= CTA ================= -->
         <section class="section band-dark" id="contact" aria-labelledby="cta-h">
             <div class="wrap">
                 <div class="opener">
-                    <h2 class="label" id="cta-h">08 &mdash; Start here</h2>
+                    <h2 class="label" id="cta-h">05 &mdash; Start here</h2>
                     <span class="opener__index">solutions@jinix.co.in</span>
                 </div>
 
